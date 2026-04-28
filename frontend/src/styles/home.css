@@ -1,0 +1,305 @@
+/* ------------ CONTENEDOR PRINCIPAL ------------ */
+
+.principal {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/imagenFondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* ------------ TÍTULOS ------------ */
+
+.principal h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.principal .wiki {
+    color: white;
+}
+
+.principal .ark {
+    color: #228822;
+}
+
+.principal h3 {
+    color: #a1a1a1;
+    font-weight: 3rem;
+    margin-bottom: 30px;
+}
+
+/* ------------ BUSCADOR ------------ */
+
+.search-container {
+    width: 750px;
+    margin: 0 auto 30px auto;
+    background: #0E1B12;
+    border: 2px solid #354b3a;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+/* --- INPUT --- */
+
+.search-container input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #a1a1a1;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+/* --- TEXTO DEL INPUT (SUGERENCIA) --- */
+
+.search-container input::placeholder {
+    color: #a1a1a1;
+    font-size: 13px;
+}
+
+/* --- BORDE (ESCRIBIENDO) --- */
+
+.search-container:focus-within {
+    border-style: double;
+    border-width: 3px;
+    border-color: #354b3a;
+}
+
+/* --- LUPA (DERECHA) --- */
+
+.search-container .search-btn {
+    background-color: #354b3a;
+    border-radius: 25%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------ TAGS ------------ */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+/* --- LABEL (SUGERENCIAS) --- */
+
+.tags #label {
+    color: #a1a1a1;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* --- CAPSULAS (SUGERENCIAS) --- */
+
+.tags .tag {
+    background: #16231A;
+    padding: 8px 16px;
+    border-radius: 30px;
+    color: #a1a1a1;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ------------------ EXPLORA EL CONTENIDO ------------------ */
+.explora {
+    padding: 60px 40px;
+    background-color: #16231A;
+    text-align: center;
+    color: white;
+}
+
+.explora h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.explora h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #a1a1a1;
+}
+
+/* Contenedor de las tarjetas */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Tarjetas individuales */
+.card {
+    background-color: #233126;
+    border: 1px solid #213B2C;
+    border-radius: 10px;
+    width: 350px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Encabezado de la tarjeta: número y imagen */
+.card-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.card-number {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #43e043;
+    /* verde */
+}
+
+.card-header img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Título alineado a la izquierda */
+.card h4 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+
+/* Descripción alineada a la izquierda */
+.card p {
+    font-size: 0.9rem;
+    color: #b4b4b4;
+    text-align: left;
+    width: 100%;
+}
+
+/* ------------ HOVER EFECTO BRILLO ------------ */
+.card:hover {
+    border-color: #5cd65c;
+    /* borde más brillante */
+    box-shadow:
+        0 0 15px #5cd65c,
+        /* sombra exterior */
+        inset 0 0 10px #5cd65c;
+    /* sombra interior */
+}
+
+.card:hover h4 {
+    color: #b4ffb4;
+    /* título más claro */
+}
+
+/* ---------- SECCIÓN DESTACADAS ---------- */
+.destacadas {
+    padding: 60px 40px;
+    background-color: #0E1B12;
+    text-align: center;
+    color: white;
+}
+
+.destacadas h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.destacadas h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #a1a1a1;
+}
+
+/* Contenedor de tarjetas */
+.creatures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Tarjetas individuales */
+.creature-card {
+    width: 250px;
+    height: 360px;
+    background-color: #233126;
+    border: 1px solid #213B2C;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.creature-card:hover {
+    border-color: #43e043;
+    box-shadow: 0 0 15px #43e043, inset 0 0 10px #43e043;
+}
+
+/* Imagen (70% de la tarjeta) */
+.creature-image {
+    height: 70%;
+    width: 100%;
+    background-color: #2b3a2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.creature-image img {
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+
+/* Información (30% de la tarjeta) */
+.creature-info {
+    height: 30%;
+    width: 100%;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Nombre y tipo alimentación */
+.name-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

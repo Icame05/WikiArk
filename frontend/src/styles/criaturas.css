@@ -1,0 +1,195 @@
+/* Contenedor de filtros */
+.filters {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cada bloque */
+.filter-box {
+    display: flex;
+    flex-direction: column;
+    color: #d5e6d5;
+    font-size: 14px;
+}
+
+.filter-box label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Selects */
+.filter-box select {
+    background: #0E1B12;
+    border: 2px solid #354b3a;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: white;
+    cursor: pointer;
+    width: 250px;
+}
+
+.filter-box select:hover {
+    border-color: #3b5c44;
+    box-shadow: 0 0 6px rgba(95, 150, 95, 0.4);
+}
+
+/* ---------- SECCIÓN CRIATURAS ---------- */
+.criaturas {
+    padding: 60px 40px;
+    background-color: #0E1B12;
+    text-align: center;
+    color: white;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Contador de Criaturas */
+.criature-counter {
+    background-color: #0E1B12;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a1a1a1;
+    margin-left: 14%;
+    margin-bottom: 20px;
+    justify-self: start;
+}
+
+.criature-counter .resaltar {
+    color: #228822;
+}
+
+/* Grid de criaturas */
+.creatures-grid {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    gap: 100px;
+}
+
+/* Tarjetas individuales */
+.creature-card {
+    width: 250px;
+    height: 360px;
+    background-color: #233126;
+    border: 1px solid #213B2C;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.creature-card:hover {
+    border-color: #43e043;
+    box-shadow: 0 0 15px #43e043, inset 0 0 10px #43e043;
+}
+
+/* Imagen (70% de la tarjeta) */
+.creature-image {
+    height: 70%;
+    width: 100%;
+    background-color: #2b3a2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.creature-image img {
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+
+/* Información (30% de la tarjeta) */
+.creature-info {
+    height: 30%;
+    width: 100%;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Nombre y tipo alimentación */
+.name-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+}
+
+.type {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 2px 8px;
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+
+.type.Carnivoro {
+    background-color: #e04d4d;
+    color: white;
+}
+
+.type.Herbivoro {
+    background-color: #4de04d;
+    color: white;
+}
+
+.type.Piscivoro {
+    background-color: #4d4fe0;
+    color: white;
+}
+
+.type.Omnivoro {
+    background-color: #bb8115;
+    color: white;
+}
+
+.type.Material {
+    background-color: #6d0b34;
+    color: white;
+}
+
+/* --- RAREZA --- */
+.category {
+    width: 75px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+.category.Comun {
+    background-color: gray;
+}
+
+.category.Raro {
+    background-color: blue;
+}
+
+.category.Epico {
+    background-color: purple;
+}
+
+.category.Legendario {
+    background-color: gold;
+}

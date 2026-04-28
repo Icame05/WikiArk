@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+
+  mongo:
+    image: mongo
+    container_name: wikiark_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build: ./backend
+    container_name: wikiark_backend
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/wikiark
+    command: sh -c "node src/seed/seed.js && node src/server.js"
+
+volumes:
+  mongo_data:

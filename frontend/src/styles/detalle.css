@@ -1,0 +1,50 @@
+.creature-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creature-detail {
+    width: 1000px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: #233126;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 75px 0 75px 0;
+}
+
+.creature-detail .creature-image {
+    height: 400px;
+    width: auto;
+    border-radius: 15px;
+}
+
+.creature-detail .creature-image img {
+    height: 90%;
+    width: auto;
+}
+
+.type.Carnivoro, .type.Herbivoro, .type.Piscivoro, .type.Omnivoro {
+    margin-right: 10px;
+}
+
+.creature-description {
+    margin: 30px 0 20px 0;
+}
+
+#guia-detail {
+    width: 1500px;
+    height: 450px;
+}
+
+#guia-detail .creature-image {
+    height: 90%;
+}
+
+#espaciado {
+    display: flex;
+    justify-content: space-between;
+}
