@@ -103,17 +103,15 @@ Base de datos (MongoDB)
 
 ## ⚙️ Instalación y ejecución
 
-### 1. Clonar el repositorio
+### 1. Clonar el repositorio a una carpeta vacía
 
 ```bash
-git clone https://github.com/tuusuario/wikiark.git
+git clone https://github.com/Icame05/wikiark.git .
 ```
 
-### 2. Clonar el repositorio
+### 2. Levantar el proyecto con Docker
 ```bash
-cd backend
-npm install
-npm run dev
+docker-compose up --build
 ```
 
 ### 3. Frontend
@@ -150,9 +148,9 @@ Asegúrate de tener MongoDB en ejecución local o mediante Docker.
 - 📱 Mejor optimización móvil
 - ⚡ Caché y optimización de API
 
-## 📸 Capturas del proyecto
+## 📸 Vídeo del proyecto
 
-(Futuras imagenes)
+[![Ver video](https://img.youtube.com/vi/f5h915E3cOw/0.jpg)](https://youtu.be/f5h915E3cOw)
 
 ## 👨‍💻 Autor
 
